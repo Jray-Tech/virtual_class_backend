@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +76,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'virtual_classroom.wsgi.application'
 
+REST_FRAMEWORK = {
+    # when it is time to do auth come back and fix the auth...
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+    ),
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -118,3 +131,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+ACCOUNT_UNIQUE_EMAIL = True
+AUTH_USER_MODEL = 'users.User'
+
+REST_AUTH_SERIALIZER = {
+    'USER_DETAILS_SERIALIZER': 'users.serializers.UserSerializer',
+}
+REST_AUTH_REGISTER_SERIALIZER = {
+    'REGISTER_SERIALIZER': 'users.serializers.CustomRegisterUser',
+}
+
+SITE_ID = 1
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
