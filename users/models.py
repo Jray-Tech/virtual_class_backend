@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-# Create your models here.
+# Create your models here
+# toekn = 0764ea43a17b4d7517aa061d8e1579248ca50b2c
 
 
 def deserialize_user(user):
@@ -21,10 +22,10 @@ class User(AbstractUser):
     def __str__(self):
         return self.username
 
-
-class Student(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.user.username
+#
+# class Student(models.Model):
+#     user = models.OneToOneField(User, on_delete=models.CASCADE)
+#
+#     def __str__(self):
+#         return self.user.username
 

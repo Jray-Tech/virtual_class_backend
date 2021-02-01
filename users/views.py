@@ -1,5 +1,5 @@
 from django.contrib.auth import authenticate, login, logout
-from .models import User, Student, deserialize_user
+from .models import User, deserialize_user
 from rest_framework import permissions
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -13,7 +13,7 @@ from django.contrib.auth import get_user_model
 # use json to do this .......or something sha
 
 class UserView(APIView):
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request, format=None):
         ''''
@@ -53,7 +53,7 @@ class UserView(APIView):
 
 
 class UserDetailView(APIView):
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request, pk):
         ''''
@@ -99,7 +99,7 @@ class UserLogIn(APIView):
 
 
 class UserLogOut(APIView):
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = (permissions.IsAuthenticated,)
 
     def get(self, request):
         '''

@@ -2,20 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee41a718-3f2b-4f3d-9efc-0676c3715c10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/0002_auto_20210130_2358.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classActivities/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classActivities/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classActivities/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classActivities/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classActivities/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classActivities/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classActivities/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classroom/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classroom/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classroom/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classroom/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classroom/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classroom/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classroom/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profiles/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/0004_delete_student.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/virtual_classroom/default.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/virtual_classroom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual_classroom/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/virtual_classroom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual_classroom/urls.py" afterDir="false" />
     </list>
@@ -40,6 +54,12 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ayomide\PycharmProjects\virtual_class\virtual_classroom" />
+      <recent name="C:\Users\Ayomide\PycharmProjects\virtual_class" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
