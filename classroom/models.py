@@ -4,11 +4,16 @@ from django.db import models
 # .
 
 
+class Messages:
+    pass
+
+
 class Courses:
     pass
 
 
 class Room:
-    # have an author
     pass
 
+# i will come back here to write thios code
+# i will do it after leatrning how to do it in the other filwes or somethiong

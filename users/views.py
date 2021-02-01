@@ -28,9 +28,9 @@ class UserView(APIView):
         })
 
     def post(self, request, format=None):
-        ''''
+        """'
         create a user or something like that ...
-        '''
+        """
         ModelUser = get_user_model()
         if request.data:
             data = request.data
