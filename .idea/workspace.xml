@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee41a718-3f2b-4f3d-9efc-0676c3715c10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/users/signals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classroom/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/classroom/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_profiles/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_profiles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtual_classroom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual_classroom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtual_classroom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtual_classroom/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

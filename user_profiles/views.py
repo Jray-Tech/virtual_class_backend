@@ -6,6 +6,7 @@ from rest_framework.views import APIView
 
 
 
+
 # api does the following
 # update profile
 # delete profile
@@ -269,4 +270,3 @@ class TutorDetailView(APIView):
 # next add signals to update as it starts
 # do media changes and urls ......set media to change profile pics
 # don't be too worried about whr images will be stored ....code will still work regardless .
-

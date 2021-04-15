@@ -3,6 +3,7 @@ from users.models import User
 # Create your models here.
 #
 # tutor rating ....
+# how do we get aut to work ...? then we do the course ...then the dashboard.
 
 
 def deserialize_school(sch):

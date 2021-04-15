@@ -5,20 +5,20 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
 
-
-# come back and create the class for details and all ...and for updating user
-# create the class to log users in and out
-# return the shit for logged in usr .....type of user and stuff like that
 # fix token authentication
-# use json to do this .......or something sha
+
 
 class UserView(APIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.AllowAny,)
+
+    # remember to delete this function or use t for only your accounts..
+    # u do not want bad actors to have access to this
 
     def get(self, request, format=None):
-        ''''
+        """'
         Get the list of users make this have token uth and persmisson also
-        '''
+        Delete this func later please ....
+        """
         users_list = []
         for user in User.objects.all():
             deserialized = deserialize_user(user)
@@ -30,18 +30,23 @@ class UserView(APIView):
     def post(self, request, format=None):
         """'
         create a user or something like that ...
+
+        NOTES: Make email small letter
+            Make first and last name accessible
         """
         ModelUser = get_user_model()
         if request.data:
             data = request.data
-            username = data.get('username')
             email = data.get('email')
+            email = email.lower()
+            first_name = data.get('first_name')
+            last_name = data.get('last_name')
             password = data.get('password')
             is_student = data.get('is_student')
             is_tutor = data.get('is_tutor')
-            user = ModelUser.objects.create_user(username=username, password=password, email=email,
-                                                 is_student=is_student,
-                                                 is_tutor=is_tutor)
+            user = ModelUser.objects.create_user(username=email, password=password, email=email,
+                                                 last_name=last_name, first_name=first_name,
+                                                 is_student=is_student, is_tutor=is_tutor)
             user.is_active = True
             user.save()
             return Response({
@@ -50,6 +55,29 @@ class UserView(APIView):
         return Response({
             "message": 'fail'
         })
+
+
+class UserNameChecker(APIView):
+    permission_classes = (permissions.AllowAny,)
+
+    def post(self, request):
+        """
+        :return true or false based on the existence of a username
+        """
+        ModelUser = get_user_model()
+        if request.data:
+            username = request.data.get('username')
+            username = username.lower()
+            # check if it already exists .....
+            username_query_set = ModelUser.objects.filter(username=username)
+            if not username_query_set:
+                return Response({
+                    'exists': False,
+                })
+            else:
+                return Response({
+                    'exists': True,
+                })
 
 
 class UserDetailView(APIView):
@@ -76,6 +104,9 @@ class UserDetailView(APIView):
         '''
         pass
 
+
+# get rid of the user login view and the user logout view .... irrelevant
+# enjoy
 
 class UserLogIn(APIView):
     permission_classes = (permissions.AllowAny,)
